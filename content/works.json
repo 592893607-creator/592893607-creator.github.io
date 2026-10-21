@@ -14,14 +14,15 @@
     "category": "视频",
     "subtitle": "工程项目影像 · 拍摄 / 后期",
     "year": "2026",
-    "image": "media/images/shengtu_1792573261087 (1)-1.png"
+    "image": "media/images/DJI_0881-2-3.jpg",
+    "video": "https://www.bilibili.com/video/BV1ennz69ETn/"
   },
   {
     "id": "ai-explained",
-    "title": "把 AI 讲明白（示例）",
+    "title": "MG科普视频",
     "category": "视频",
     "subtitle": "科普内容 · 选题 / 视觉 / 剪辑",
-    "year": "2024"
+    "year": "2026"
   },
   {
     "id": "city-slices",
