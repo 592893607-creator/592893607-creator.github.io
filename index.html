@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111312">
+  <meta name="description" content="视频策划、拍摄剪辑、摄影与视觉设计作品集">
+  <title>作品集 / Portfolio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#111312;--panel:#191c1a;--panel2:#202421;--ink:#f2f3ee;--muted:#9ca49f;--line:#343a35;--acid:#c8f169;--coral:#fa795e;--cyan:#79d5cf;--max:1280px;font-family:Inter,"Helvetica Neue",Arial,"Noto Sans SC",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.55}button,input,textarea,select{font:inherit}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}::selection{background:var(--acid);color:#111}
+    .wrap{width:min(var(--max),calc(100% - 64px));margin:auto}.topbar{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-size:14px;font-weight:700;letter-spacing:.08em}.brand span{color:var(--acid)}.top-right{display:flex;align-items:center;gap:22px}.nav{display:flex;gap:22px;color:#c2c8c1;font-size:13px}.nav a:hover,.nav a:focus-visible{color:var(--acid)}.lang,.edit-toggle{border:1px solid var(--line);background:transparent;padding:8px 11px;font-size:12px}.lang:hover,.edit-toggle:hover{border-color:var(--acid);color:var(--acid)}
+    .hero{padding:66px 0 56px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:50px;align-items:end}.eyebrow{color:var(--acid);font-size:11px;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(50px,7vw,92px);line-height:.97;letter-spacing:0;margin:17px 0 20px;font-weight:650}.hero h1 em{font-style:normal;color:var(--acid)}.hero-intro{max-width:470px;color:#b4bcb5;font-size:16px;line-height:1.8}.hero-meta{margin-top:28px;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:12px}.available{width:7px;height:7px;background:var(--acid);border-radius:50%;display:inline-block}.hero-frame{height:350px;position:relative;overflow:hidden;background:#222}.hero-frame img{filter:saturate(.77);transition:transform .7s}.hero-frame:hover img{transform:scale(1.03)}.frame-tag{position:absolute;bottom:16px;left:16px;background:#111c;color:white;padding:7px 10px;font-size:11px}.frame-count{position:absolute;bottom:16px;right:16px;color:white;font-size:11px}
+    .section-head{border-top:1px solid var(--line);padding:19px 0 14px;display:flex;align-items:center;justify-content:space-between}.section-head h2{font-size:15px;font-weight:600;margin:0}.section-head small{color:var(--muted);font-size:11px}.featured{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;padding:12px 0 62px}.feature{position:relative;min-height:315px;overflow:hidden;background:#242825}.feature img{position:absolute;inset:0;filter:brightness(.7);transition:transform .7s,filter .4s}.feature:hover img{transform:scale(1.035);filter:brightness(.88)}.feature-copy{position:absolute;left:24px;bottom:20px;right:20px}.feature-copy .eyebrow{color:var(--acid)}.feature-copy h3{font-size:27px;margin:6px 0 2px;line-height:1.15}.feature-copy p{color:#e2e5df;margin:0;font-size:12px}.play{position:absolute;right:20px;top:20px;border:1px solid #ffffff88;background:#1118;width:40px;height:40px;display:grid;place-items:center;border-radius:50%;font-size:14px}
+    .works{padding-bottom:90px}.filters{display:flex;gap:8px}.filter{background:transparent;border:1px solid var(--line);padding:7px 12px;color:#aeb5ae;font-size:12px}.filter.active{background:var(--acid);border-color:var(--acid);color:#141711}.grid{display:grid;grid-template-columns:repeat(var(--columns,3),minmax(0,1fr));gap:30px 18px}.work{min-width:0;position:relative}.work[draggable="true"]{cursor:grab}.work[draggable="true"]:active{cursor:grabbing}.thumb{aspect-ratio:1.35;overflow:hidden;background:var(--panel);position:relative}.thumb img{transition:transform .55s,filter .3s;filter:saturate(.85)}.work:hover .thumb img{transform:scale(1.035);filter:saturate(1)}.work-type{position:absolute;top:12px;left:12px;background:#111d;color:#f3f4ee;padding:5px 8px;font-size:10px}.work-info{display:flex;justify-content:space-between;gap:10px;padding-top:11px}.work-info h3{font-size:15px;font-weight:550;margin:0}.work-info p{font-size:12px;color:var(--muted);margin:3px 0 0}.work-year{font-size:11px;color:var(--muted);white-space:nowrap}.order-hint{display:none;color:var(--acid);font-size:10px;margin-top:8px}.editing .order-hint{display:block}
+    .about{border-top:1px solid var(--line);padding:55px 0 62px;display:grid;grid-template-columns:1fr 1fr;gap:45px}.about h2{font-size:31px;line-height:1.18;margin:0;max-width:420px}.about-copy{color:#b4bcb5;max-width:510px}.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.skill{border:1px solid var(--line);color:#c7cec6;padding:7px 10px;font-size:11px}.contact{border-top:1px solid var(--line);padding:28px 0 42px;display:flex;justify-content:space-between;align-items:end;gap:20px}.contact h2{font-size:23px;margin:0 0 5px}.contact p{margin:0;color:var(--muted);font-size:12px}.contact-links{display:flex;gap:16px;font-size:12px}.contact-links a{border-bottom:1px solid var(--acid);padding-bottom:3px}.footer{border-top:1px solid var(--line);padding:17px 0 26px;color:#727b74;font-size:10px;display:flex;justify-content:space-between}
+    .note{position:fixed;left:50%;bottom:18px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--acid);color:#121610;padding:10px 14px;font-size:12px;transition:.2s;z-index:20}.note.show{opacity:1;transform:translate(-50%,0)}
+    .drawer{position:fixed;inset:0 0 0 auto;width:min(430px,100%);background:#171a18;border-left:1px solid var(--line);z-index:15;transform:translateX(101%);transition:transform .28s;overflow:auto;padding:21px}.drawer.open{transform:translateX(0)}.drawer-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}.drawer-head h2{font-size:17px;margin:0}.close{border:1px solid var(--line);background:transparent;padding:5px 10px}.local-warning{border-left:2px solid var(--coral);padding:9px 11px;background:#24201f;color:#d5c5c0;font-size:11px;margin:12px 0 18px}.editor-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.small-btn{border:1px solid var(--line);background:transparent;padding:7px 10px;font-size:11px}.small-btn:hover{border-color:var(--acid);color:var(--acid)}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:11px;color:#aeb6ae}.field input,.field textarea,.field select{width:100%;background:#101210;border:1px solid var(--line);color:var(--ink);padding:9px 10px;outline:none}.field input:focus,.field textarea:focus{border-color:var(--acid)}.field textarea{min-height:68px;resize:vertical}.form-actions{display:flex;gap:8px;margin:16px 0 22px}.primary{background:var(--acid);border:1px solid var(--acid);color:#151a10;padding:9px 12px;font-weight:600;font-size:12px}.danger{border:1px solid #744238;background:transparent;color:#ff9a82;padding:8px 10px;font-size:11px}.drawer h3{font-size:12px;margin:20px 0 9px;color:#c3c9c1}.editor-list{display:grid;gap:5px}.editor-row{display:flex;align-items:center;gap:8px;padding:8px;border:1px solid var(--line);font-size:11px;background:#121412}.editor-row.selected{border-color:var(--acid)}.editor-row .row-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}.editor-row button{background:transparent;border:0;color:var(--muted);padding:2px 4px}.editor-row button:hover{color:var(--acid)}.editor-row.dragging{opacity:.4}.edit-scrim{position:fixed;inset:0;background:#0008;z-index:14;display:none}.edit-scrim.show{display:block}.empty{grid-column:1/-1;padding:65px 0;text-align:center;color:var(--muted);border:1px dashed var(--line)}
+    @media(max-width:760px){.wrap{width:min(100% - 36px,var(--max))}.topbar{height:60px}.nav{display:none}.top-right{gap:9px}.hero{grid-template-columns:1fr;gap:24px;padding:45px 0 38px}.hero h1{font-size:56px}.hero-frame{height:auto;aspect-ratio:1.2}.hero-intro{font-size:14px}.featured{grid-template-columns:1fr;gap:12px;padding-bottom:48px}.feature{min-height:270px}.feature:nth-child(2){min-height:220px}.section-head{align-items:flex-start;gap:12px;flex-direction:column}.filters{flex-wrap:wrap}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 11px}.thumb{aspect-ratio:1.05}.work-info{display:block}.work-year{display:block;margin-top:4px}.about{grid-template-columns:1fr;gap:20px;padding:40px 0}.about h2{font-size:27px}.contact{align-items:flex-start;flex-direction:column}.contact-links{flex-wrap:wrap}.footer{gap:10px}.drawer{padding:17px}.hero-meta{flex-wrap:wrap}}
+    @media(max-width:390px){.wrap{width:calc(100% - 28px)}.hero h1{font-size:48px}.grid{grid-template-columns:1fr}.thumb{aspect-ratio:1.3}.filters{gap:6px}.filter{padding:6px 9px}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#top"><span id="brandName">YOUR NAME</span> <span>●</span> PORTFOLIO</a>
+    <div class="top-right">
+      <nav class="nav"><a href="#work">作品</a><a href="#about">关于</a><a href="#contact">联系</a></nav>
+      <button class="lang" id="langBtn" type="button" title="英文版内容将在后续补充">中文 / EN</button>
+      <a class="edit-toggle" href="https://app.pagescms.org/" target="_blank" rel="noreferrer">内容管理</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">VIDEO / PHOTO / DESIGN</div>
+        <h1>Make it<br><em>move.</em></h1>
+        <p class="hero-intro" id="heroIntro">视频策划、拍摄与剪辑。用影像记录现场，也把复杂的想法讲清楚。</p>
+        <div class="hero-meta"><span><i class="available"></i> <span id="heroStatus">开放合作</span></span><span id="heroRole">新媒体运营 · 视频拍摄剪辑</span></div>
+      </div>
+      <a class="hero-frame" href="#work" aria-label="查看精选作品">
+        <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1400&q=85" alt="拍摄现场，摄影机对准室内场景">
+        <span class="frame-tag">SELECTED WORKS / 2022—2026</span><span class="frame-count">01 — 08</span>
+      </a>
+    </section>
+    <section class="wrap">
+      <div class="section-head"><h2>精选视频 <small>/ SELECTED FILM</small></h2><small>策划 · 拍摄 · 剪辑</small></div>
+      <div class="featured" id="featured"></div>
+    </section>
+    <section class="wrap works" id="work">
+      <div class="section-head"><h2>作品档案 <small>/ WORKS</small></h2><div class="filters" id="filters"></div></div>
+      <div class="grid" id="grid"></div>
+    </section>
+    <section class="wrap about" id="about">
+      <div><div class="eyebrow">ABOUT</div><h2 id="aboutTitle">把内容做得清楚，也做得有记忆点。</h2></div>
+      <div class="about-copy"><p id="aboutIntro">你好，我是你的姓名。一名关注内容表达与视觉叙事的新媒体创作者，参与从选题、拍摄到后期交付的完整流程。</p><p id="aboutDetails">这里的示例文字可以替换成你的经历、擅长领域和合作方式。请用真实项目替换示例作品，避免把演示数据当成实际履历。</p><div class="skills"><span class="skill">内容策划</span><span class="skill">视频拍摄</span><span class="skill">剪辑后期</span><span class="skill">摄影</span><span class="skill">视觉设计</span></div></div>
+    </section>
+    <section class="wrap contact" id="contact"><div><h2 id="contactTitle">有项目想法？</h2><p id="contactNote">欢迎联系我，聊聊你的内容计划。</p></div><div class="contact-links"><a id="emailLink" href="mailto:hello@example.com">邮箱：hello@example.com</a><a href="#contact" id="wechat">微信：点击查看占位信息</a></div></section>
+  </main>
+  <footer class="wrap footer"><span>© <span id="year"></span> <span id="footerName">YOUR NAME</span></span><span>视频 · 摄影 · 设计</span></footer>
+  <div class="note" id="note" role="status"></div>
+  <script>
+    const starter=[
+      {id:'v1',title:'山海之间',category:'视频',subtitle:'旅拍短片 · 策划 / 拍摄 / 剪辑',year:'2025',image:'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=82',video:''},
+      {id:'v2',title:'看见工程现场',category:'视频',subtitle:'工程项目影像 · 拍摄 / 后期',year:'2024',image:'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=82',video:''},
+      {id:'v3',title:'把 AI 讲明白',category:'视频',subtitle:'科普内容 · 选题 / 视觉 / 剪辑',year:'2024',image:'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=82',video:''},
+      {id:'p1',title:'城市切片',category:'摄影',subtitle:'人文摄影',year:'2025',image:'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1000&q=82',video:''},
+      {id:'p2',title:'光落在脸上',category:'摄影',subtitle:'人像摄影',year:'2024',image:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=82',video:''},
+      {id:'p3',title:'几何与日常',category:'摄影',subtitle:'建筑摄影',year:'2024',image:'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=82',video:''},
+      {id:'d1',title:'街角咖啡品牌',category:'设计',subtitle:'品牌视觉 · 海报 / 社交媒体',year:'2025',image:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=82',video:''},
+      {id:'d2',title:'让知识好读一点',category:'设计',subtitle:'公众号长图 · 信息设计',year:'2024',image:'https://images.unsplash.com/photo-1455390582262-044ceda277a8?auto=format&fit=crop&w=1000&q=82',video:''}
+    ];
+    let items=structuredClone(starter),filter='全部';
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    function card(x){return `<article class="work" data-id="${esc(x.id)}"><a href="${x.category==='视频'&&x.video?esc(x.video):'#work'}" ${x.category==='视频'&&x.video?'target="_blank" rel="noreferrer"':''}><div class="thumb"><img src="${esc(x.image||'')}" alt="${esc(x.title)}" loading="lazy"><span class="work-type">${esc(x.category)}</span></div><div class="work-info"><div><h3>${esc(x.title)}</h3><p>${esc(x.subtitle)}</p></div><span class="work-year">${esc(x.year)}</span></div></a></article>`}
+    function render(){
+      const vids=items.filter(x=>x.category==='视频').slice(0,2);
+      document.getElementById('featured').innerHTML=vids.map((x,i)=>`<a class="feature" href="${x.video?esc(x.video):'#work'}" ${x.video?'target="_blank" rel="noreferrer"':''}><img src="${esc(x.image)}" alt="${esc(x.title)}"><span class="play">▶</span><div class="feature-copy"><div class="eyebrow">FILM / 0${i+1}</div><h3>${esc(x.title)}</h3><p>${esc(x.subtitle)}</p></div></a>`).join('');
+      const cats=['全部','视频','摄影','设计'];document.getElementById('filters').innerHTML=cats.map(c=>`<button class="filter ${filter===c?'active':''}" data-filter="${c}" type="button">${c==='全部'?'全部作品':c}</button>`).join('');
+      const visible=items.filter(x=>filter==='全部'||x.category===filter);document.getElementById('grid').innerHTML=visible.length?visible.map(card).join(''):'<div class="empty">这个分类还没有作品</div>';
+      document.querySelector('.grid').style.setProperty('--columns',localStorage.getItem('portfolio-layout')||3);
+    }
+    function toast(msg){const n=document.getElementById('note');n.textContent=msg;n.classList.add('show');setTimeout(()=>n.classList.remove('show'),2400)}
+    function applySiteSettings(s){
+      const values={brandName:s.name,footerName:s.name,heroIntro:s.heroIntro,heroStatus:s.heroStatus,heroRole:s.heroRole,aboutTitle:s.aboutTitle,aboutIntro:s.aboutIntro,aboutDetails:s.aboutDetails,contactTitle:s.contactTitle,contactNote:s.contactNote};
+      for(const [id,value] of Object.entries(values))if(value)document.getElementById(id).textContent=value;
+      if(s.email){const link=document.getElementById('emailLink');link.href=`mailto:${s.email}`;link.textContent=`邮箱：${s.email}`}
+      if(s.wechat)document.getElementById('wechat').textContent=`微信：${s.wechat}`;
+    }
+    document.getElementById('filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(b){filter=b.dataset.filter;render()}});
+    document.getElementById('langBtn').addEventListener('click',()=>toast('英文内容后续补充；当前先制作中文版'));
+    document.getElementById('wechat').addEventListener('click',e=>{e.preventDefault();toast('请在内容管理后台补充微信号')});document.getElementById('year').textContent=new Date().getFullYear();render();
+    fetch('./content/works.json').then(r=>{if(!r.ok)throw Error('CMS content unavailable');return r.json()}).then(data=>{if(Array.isArray(data)){items=data;render()}}).catch(()=>{});
+    fetch('./content/site.json').then(r=>{if(!r.ok)throw Error('CMS settings unavailable');return r.json()}).then(applySiteSettings).catch(()=>{});
+  </script>
+</body>
+</html>

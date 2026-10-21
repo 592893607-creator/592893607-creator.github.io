@@ -1,0 +1,81 @@
+media:
+  - name: images
+    label: 图片
+    input: media/images
+    output: media/images
+    extensions: [jpg, jpeg, png, webp, avif]
+    categories: [image]
+content:
+  - name: site
+    label: 网站资料
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: 姓名 / 展示名
+        type: string
+      - name: heroIntro
+        label: 首页简介
+        type: text
+      - name: heroStatus
+        label: 合作状态
+        type: string
+      - name: heroRole
+        label: 职业方向
+        type: string
+      - name: aboutTitle
+        label: 关于标题
+        type: string
+      - name: aboutIntro
+        label: 关于简介
+        type: text
+      - name: aboutDetails
+        label: 经历与合作说明
+        type: text
+      - name: contactTitle
+        label: 联系区标题
+        type: string
+      - name: contactNote
+        label: 联系说明
+        type: text
+      - name: email
+        label: 邮箱
+        type: string
+      - name: wechat
+        label: 微信号
+        type: string
+  - name: works
+    label: 作品集
+    type: file
+    path: content/works.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: 标识
+        type: string
+        required: true
+        description: 每件作品唯一的简短英文标识，例如 city-portrait。
+      - name: title
+        label: 作品标题
+        type: string
+        required: true
+      - name: category
+        label: 分类
+        type: select
+        options:
+          values: [视频, 摄影, 设计]
+      - name: subtitle
+        label: 一句话说明
+        type: string
+      - name: year
+        label: 年份
+        type: string
+      - name: image
+        label: 封面图片
+        type: image
+      - name: video
+        label: 视频链接
+        type: string
+        description: 视频先填写访客可公开访问的播放链接；请勿把大视频文件提交到 GitHub 仓库。
