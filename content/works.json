@@ -1,74 +1,61 @@
 [
   {
-    "id": "mountain-travel",
-    "title": "山海之间（示例）",
+    "id": "Macao-travel",
+    "title": "魔幻澳门",
     "category": "视频",
     "subtitle": "旅拍短片 · 策划 / 拍摄 / 剪辑",
-    "year": "2025",
-    "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=82",
-    "video": ""
+    "year": "2022",
+    "image": "media/images/shengtu_1792573261087 (1).png",
+    "video": "https://www.bilibili.com/video/BV1jQnq6REjN/?vd_source=7251f24129d0dcde47fe6c60f729d99e"
   },
   {
     "id": "project-site",
-    "title": "看见工程现场（示例）",
+    "title": "看见工程现场",
     "category": "视频",
     "subtitle": "工程项目影像 · 拍摄 / 后期",
-    "year": "2024",
-    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=82",
-    "video": ""
+    "year": "2026",
+    "image": "media/images/shengtu_1792573261087 (1)-1.png"
   },
   {
     "id": "ai-explained",
     "title": "把 AI 讲明白（示例）",
     "category": "视频",
     "subtitle": "科普内容 · 选题 / 视觉 / 剪辑",
-    "year": "2024",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=82",
-    "video": ""
+    "year": "2024"
   },
   {
     "id": "city-slices",
     "title": "城市切片（示例）",
     "category": "摄影",
     "subtitle": "人文摄影",
-    "year": "2025",
-    "image": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1000&q=82",
-    "video": ""
+    "year": "2025"
   },
   {
     "id": "portrait-light",
     "title": "光落在脸上（示例）",
     "category": "摄影",
     "subtitle": "人像摄影",
-    "year": "2024",
-    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=82",
-    "video": ""
+    "year": "2024"
   },
   {
     "id": "architecture",
     "title": "几何与日常（示例）",
     "category": "摄影",
     "subtitle": "建筑摄影",
-    "year": "2024",
-    "image": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=82",
-    "video": ""
+    "year": "2024"
   },
   {
     "id": "coffee-brand",
     "title": "街角咖啡品牌（示例）",
     "category": "设计",
     "subtitle": "品牌视觉 · 海报 / 社交媒体",
-    "year": "2025",
-    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=82",
-    "video": ""
+    "year": "2025"
   },
   {
     "id": "knowledge-design",
     "title": "让知识好读一点（示例）",
     "category": "设计",
     "subtitle": "公众号长图 · 信息设计",
-    "year": "2024",
-    "image": "https://images.unsplash.com/photo-1455390582262-044ceda277a8?auto=format&fit=crop&w=1000&q=82",
-    "video": ""
+    "year": "2024"
   }
 ]
